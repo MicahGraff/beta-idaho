@@ -396,11 +396,14 @@ CLASSES
 */
 
 .currentpage {
-  color: white !important;
   background-color: dimgrey !important;
 }
 
-.currentpage:hover {
+.currentpage a {
+  color: white !important;
+}
+
+.currentpage:hover a {
   color: grey !important;
 }
 
@@ -424,5 +427,13 @@ CLASSES
 
 .extraspace {
   height: 200px;
+}
+
+.float-left {
+  float: left;
+}
+
+.new-line {
+  clear: both;
 }
 

@@ -1,5 +1,7 @@
 $(document).ready(function() {
-  
+
+var html = jQuery('html');
+var scrollPosition;
 
 $(window).scroll(function(e){ 
   var $el = $('.fixedElement'); 
@@ -59,13 +61,37 @@ function showNav()
 {
   $("#menuNav").removeClass("hide");
   $("#menudiv").addClass("hide");
+
+  lockScroll();
 }
 
 function hideNav()
 {
   $("#menuNav").addClass("hide");
   $("#menudiv").removeClass("hide");
+
+  unlockScroll();
 }
 
+function lockScroll()
+{
+  scrollPosition = [
+  self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
+  self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
+  ];
+
+  html.data('scroll-position', scrollPosition);
+  html.css('overflow', 'hidden');
+  window.scrollTo(scrollPosition[0], scrollPosition[1]);
+}
+
+function unlockScroll()
+{
+  scrollPosition = html.data('scroll-position');
+  
+  html.data('scroll-position', scrollPosition);
+  html.css('overflow', 'visible');
+  window.scrollTo(scrollPosition[0], scrollPosition[1]);
+}
 
 });
