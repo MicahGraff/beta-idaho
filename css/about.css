@@ -1,0 +1,85 @@
+/*
+OVERALL
+*/
+
+.new-background-1 {
+	background: url("../images/betacovercrop.png") repeat center fixed;
+	background-size: cover;
+}
+
+.new-background-2 {
+	background: url("../images/uofibackground.jpg") repeat center fixed;
+	background-size: cover;
+}
+
+.new-background-3 {
+	background: url("../images/betacovercrop.png") repeat center fixed;
+	background-size: cover;
+}
+
+/*
+ABOUT US SECTION
+*/
+
+#aboutus {
+	height: 600px;
+	background: white;
+	text-align: center;
+	color: #252525
+}
+
+#aboutus h1 {
+	font-size: 40px;
+	font-family: 'Lora';
+	margin-bottom: 75px;
+}
+
+#aboutusnav {
+	padding-top: 70px;
+	padding-bottom: 20px;
+	margin: 0 200px;
+	border-bottom: 1px solid grey;
+	margin-bottom: 20px;
+}
+
+#aboutusnav p {
+	font-size: 20px;
+	line-height: 40px;
+	font-family: 'Raleway';
+}
+
+#aboutusnav h3 {
+	border-top: 1px solid grey;
+	padding-top: 20px;
+	margin-top: 100px;
+}
+
+#aboutusnav h3 span {
+	font-family: 'Raleway';
+	font-size: 30px;
+	cursor: pointer;
+}
+
+#aboutusnav h3 span:hover {
+	color: dimgrey;
+}
+
+.aboutusinfo {
+	font-family: 'Raleway';
+	font-size: 18px;
+	margin: 0px 150px;
+	line-height: 40px;
+}
+
+.aboutblock {
+	height: 600px;
+	background: white;
+	text-align: center;
+	color: #252525
+}
+
+.aboutblock h2 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 30px;
+}

@@ -417,6 +417,11 @@ CLASSES
   padding: 200px 0px 200px 0px;
 }
 
+.seeThroughSmall {
+  width: 100%;
+  padding: 83px 0px 83px 0px;
+}
+
 .fixedElement {
 
 }
@@ -435,5 +440,9 @@ CLASSES
 
 .new-line {
   clear: both;
+}
+
+.active {
+  color: dimgrey;
 }
 
