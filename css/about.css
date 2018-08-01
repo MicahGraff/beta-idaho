@@ -2,18 +2,14 @@
 OVERALL
 */
 
-.new-background-1 {
-	background: url("../images/betacovercrop.png") repeat center fixed;
-	background-size: cover;
-}
+body {
+	-webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    -o-transition: all 600ms;
+    -ms-transition: all 600ms;
+    transition: all 600ms;
 
-.new-background-2 {
-	background: url("../images/uofibackground.jpg") repeat center fixed;
-	background-size: cover;
-}
-
-.new-background-3 {
-	background: url("../images/betacovercrop.png") repeat center fixed;
+    background: url("../images/aboutImages/betaidaho.jpg") repeat center fixed;
 	background-size: cover;
 }
 
@@ -22,7 +18,7 @@ ABOUT US SECTION
 */
 
 #aboutus {
-	height: 600px;
+	height: 495px;
 	background: white;
 	text-align: center;
 	color: #252525
@@ -31,13 +27,13 @@ ABOUT US SECTION
 #aboutus h1 {
 	font-size: 40px;
 	font-family: 'Lora';
-	margin-bottom: 75px;
+	margin-bottom: 50px;
 }
 
 #aboutusnav {
-	padding-top: 70px;
+	padding-top: 60px;
 	padding-bottom: 20px;
-	margin: 0 200px;
+	margin: 0 209px;
 	border-bottom: 1px solid grey;
 	margin-bottom: 20px;
 }
@@ -51,17 +47,27 @@ ABOUT US SECTION
 #aboutusnav h3 {
 	border-top: 1px solid grey;
 	padding-top: 20px;
-	margin-top: 100px;
+	margin-top: 60px;
 }
 
 #aboutusnav h3 span {
 	font-family: 'Raleway';
-	font-size: 30px;
+	font-size: 26px;
 	cursor: pointer;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-right: 28px;
+	padding-left: 28px;
+	border-right: 1px solid grey;
+	border-left: 1px solid grey;
+
+	transition: background-color 0.5s ease;
 }
 
 #aboutusnav h3 span:hover {
-	color: dimgrey;
+	background-color: dimgrey;
+	color: white;
+  	cursor: pointer;
 }
 
 .aboutusinfo {
@@ -72,14 +78,54 @@ ABOUT US SECTION
 }
 
 .aboutblock {
-	height: 600px;
+	height: 500px;
 	background: white;
 	text-align: center;
-	color: #252525
+	color: #252525;
 }
 
 .aboutblock h2 {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	font-size: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 28px;
 }
+
+.aboutblock p {
+	font-size: 18px;
+	line-height: 37px;
+}
+
+#founderstext {
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-family: 'Lora';
+}
+
+#paterquote {
+	margin-top: 20px;
+	font-family: 'Lora';
+}
+
+.push-down-arrow {
+	color: white;
+	text-shadow: 0px 0px 5px rgba(25,25,25,0.8);
+}
+
+#aboutarrowtop {
+	margin-top: 40px;
+}
+
+#aboutarrowmiddle {
+	margin-top: 45px;
+}
+
+.push-down-arrow p {
+	font-size: 20px;
+}
+
+.push-down-arrow:hover {
+	color: dimgrey;
+	cursor: pointer;
+}
+

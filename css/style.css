@@ -39,6 +39,7 @@ header a {
   position: absolute;
   top: 10px;
   left: 13px;
+  z-index: 9;
 }
 
 #logodiv:hover {
@@ -98,14 +99,12 @@ header a {
   margin-bottom: 5px;
   font-size: 80px;
   color: white;
-  /*text-shadow: 2px 2px dimgrey;*/
   text-shadow: 0px 0px 25px rgba(25,25,25,0.8);
 }
 
 #maintext h2 {
   font-size: 60px;
   color: white;
-  /*text-shadow: 2px 2px dimgrey;*/
   text-shadow: 0px 0px 20px rgba(25,25,25,0.8);
 }
 
@@ -239,7 +238,7 @@ LOCATION SECTION
   background-color: white;
   color: dimgrey;
   width: 100%;
-  height: 560px;
+  height: 495px;
 }
 
 #locationpage div {
@@ -248,18 +247,20 @@ LOCATION SECTION
 }
 
 #locationpage div p {
-  font-size: 28px;
-  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-family: 'Lora';
   color: white;
   color: dimgrey;
   margin-top: 20px;
   margin-left: 12.5%;
-  width: 75%;
+  width: 78%;
   line-height: 2;
 }
 
 #locationpage div p:last-child {
   color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
 }
 
 #locationpage div p a {
@@ -404,7 +405,7 @@ NAV MENU
 #menuNavBar {
   opacity: 0.8;
   background-color: dimgrey;
-  width: 544px;
+  width: 560px;
   height: 50px;
   right: 63px;
   position: absolute;

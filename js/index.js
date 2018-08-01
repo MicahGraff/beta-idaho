@@ -4,6 +4,7 @@ var html = jQuery('html');
 var scrollPosition;
 var hidOnce = false;
 var showOnce = false;
+var navBarOpen = true;
 
 $(window).scroll(function(e){ 
   var $el = $('.fixedElement'); 
@@ -79,15 +80,22 @@ function offAuthorHover()
 
 function showNavScreen()
 {
+  if (navBarOpen)
+  {
+    hideNavBar();
+    navBarOpen = true;
+  }
+  $("#secondarymenu").hide();
   $("#menuNav").removeClass("hide");
-  $("#something").addClass("hide");
   lockScroll();
 }
 
 function hideNavScreen()
 {
+  $("#secondarymenu").show();
+  if (navBarOpen)
+    showNavBar();
   $("#menuNav").addClass("hide");
-  $("#something").removeClass("hide");
   unlockScroll();
 }
 
@@ -117,6 +125,7 @@ function hideNavBar()
   $("#menuNavBar").toggle(600);
   $("#menu").toggle();
   $("#secondarymenu").fadeToggle(300);
+  navBarOpen = false;
 }
 
 function showNavBar()
@@ -124,6 +133,7 @@ function showNavBar()
   $("#menuNavBar").toggle(600);
   $("#menu").fadeToggle(300);
   $("#secondarymenu").toggle();
+  navBarOpen = true;
 }
 
 });
