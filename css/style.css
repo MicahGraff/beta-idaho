@@ -456,7 +456,15 @@ CLASSES
 }
 
 .currentpage:hover p {
-  color: grey !important;
+  cursor: default;
+}
+
+.navcurrentpage {
+  background-color: #252525;
+}
+
+.navcurrentpage:hover {
+  cursor: default !important;
 }
 
 .container {
