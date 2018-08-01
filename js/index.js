@@ -1,10 +1,7 @@
 $(document).ready(function() {
 
-var html = jQuery('html');
-var scrollPosition;
 var hidOnce = false;
 var showOnce = false;
-var navBarOpen = true;
 
 $(window).scroll(function(e){ 
   var $el = $('.fixedElement'); 
@@ -29,7 +26,7 @@ $(window).scroll(function(e){
   if ($(this).scrollTop() > 150)
   {
     $('.fixedElementHide').fadeIn(400);
-    if ($('#menuNavBar').is(':visible') && !hidOnce)
+    if ($('#menuNavBar').is(':visible') && !hidOnce && $('#menuNav').is(':hidden'))
     {
       hideNavBar();
       hidOnce = true;
@@ -38,7 +35,7 @@ $(window).scroll(function(e){
   if ($(this).scrollTop() < 150)
   {
     $('.fixedElementHide').fadeOut(400);
-    if ($('#menuNavBar').is(':hidden') && !showOnce)
+    if ($('#menuNavBar').is(':hidden') && !showOnce && $('#menuNav').is(':hidden'))
     {
       showNavBar();
       showOnce = true;
@@ -80,44 +77,19 @@ function offAuthorHover()
 
 function showNavScreen()
 {
-  if (navBarOpen)
-  {
-    hideNavBar();
-    navBarOpen = true;
-  }
+  hideNavBar();
   $("#secondarymenu").hide();
-  $("#menuNav").removeClass("hide");
-  lockScroll();
+  $("#menu").hide();
+  $("#menuNav").slideToggle(400);
 }
 
 function hideNavScreen()
 {
-  $("#secondarymenu").show();
-  if (navBarOpen)
-    showNavBar();
-  $("#menuNav").addClass("hide");
-  unlockScroll();
-}
-
-function lockScroll()
-{
-  scrollPosition = [
-  self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
-  self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
-  ];
-
-  html.data('scroll-position', scrollPosition);
-  html.css('overflow', 'hidden');
-  window.scrollTo(scrollPosition[0], scrollPosition[1]);
-}
-
-function unlockScroll()
-{
-  scrollPosition = html.data('scroll-position');
-  
-  html.data('scroll-position', scrollPosition);
-  html.css('overflow', 'visible');
-  window.scrollTo(scrollPosition[0], scrollPosition[1]);
+  showNavBar();
+  $("#secondarymenu").hide();
+  $("#menu").show();
+  $("#menuNav").slideToggle(400);
+  hidOnce = false;
 }
 
 function hideNavBar()
@@ -125,7 +97,6 @@ function hideNavBar()
   $("#menuNavBar").toggle(600);
   $("#menu").toggle();
   $("#secondarymenu").fadeToggle(300);
-  navBarOpen = false;
 }
 
 function showNavBar()
@@ -133,7 +104,6 @@ function showNavBar()
   $("#menuNavBar").toggle(600);
   $("#menu").fadeToggle(300);
   $("#secondarymenu").toggle();
-  navBarOpen = true;
 }
 
 });
