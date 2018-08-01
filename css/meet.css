@@ -22,14 +22,17 @@ EXECUTIVE BOARD
 }
 
 #execboard div p {
-	margin-top: 25px;
+	margin-top: 30px;
 	margin-left: 75px;
 	font-family: 'Raleway';
+	font-size: 18px;
+	line-height: 28px;
 }
 
 #execboard div h2 span {
 	font-size: 16px;
 	color: dimgrey;
+	font-weight: 600;
 }
 
 .execPreview {
@@ -43,14 +46,20 @@ EXECUTIVE BOARD
 	margin-bottom: 15px;
 	font-size: 20px;
 	margin-left: 75px;
+	font-weight: 600;
 }
 
 .execDiv {
-	margin-top: 100px;
+	margin-top: 50px;
 	margin-left: 200px;
 	margin-right: 200px;
 	height: 300px;
 	border-bottom: 1px solid grey;
+}
+
+.title-description {
+	margin-left: 275px;
+	padding-top: 3px;
 }
 
 .special-border {
