@@ -1,0 +1,62 @@
+/*
+OVERALL
+*/
+
+body {
+	background: url("../images/recruitmentImages/pc17.png") repeat center fixed;
+ 	background-size: cover;
+}
+
+/*
+RUSH INFO SECTION
+*/
+
+.recruitment-surround {
+	padding-top: 40px;
+	padding-bottom: 50px;
+	width: 100%;
+}
+
+.fill-white {
+	background-color: white;
+	color: #252525;
+	text-align: center;
+}
+
+#rushbeta {
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	color: #252525
+}
+
+#rushbeta h1 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 30px;
+}
+
+#rushinfo {
+	width: 100%;
+	height: 695px;
+	background: rgba(204, 204, 204, 0.6);
+}
+
+#rushinfo div {
+	width: 75%;
+	margin: 0 auto;
+}
+
+#rushinfo h1 {
+	padding-top: 80px;
+	margin-left: 80px;
+	font-size: 24px;
+	color: black;
+}
+
+#rushinfo p {
+	margin-left: 100px;
+	padding-top: 20px;
+	font-size: 20px;
+	color: black;
+}

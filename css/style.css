@@ -84,6 +84,7 @@ header a {
   height: 50px;
   width: 50px;
   opacity: 0.8;
+  z-index: 9;
 }
 
 #maintext {
@@ -332,6 +333,7 @@ NAV MENU
   background-color: black;
   opacity: 0.88;
   right: 0px;
+  z-index: 9;
 }
 
 #closenav {
