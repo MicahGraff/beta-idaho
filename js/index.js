@@ -106,6 +106,11 @@ function showNavBar()
   $("#secondarymenu").toggle();
 }
 
-// MEET PAGE VARIABLES (FOR SCROLL ON PAGE LOAD - MAY HAVE TO PUT THESE OUTSIDE DOCUMENT.READY?)
+// FIX NAV MENU MORE BUTTONS
+
+$("#menuNav div button").click(function() {
+  var elmnt = $(this).children();
+  elmnt[0].click();
+});
 
 });
