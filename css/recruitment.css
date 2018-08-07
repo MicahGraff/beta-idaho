@@ -3,16 +3,15 @@ OVERALL
 */
 
 body {
-	background-color: white;
+	background: url("../images/recruitmentImages/pc15.jpg") repeat center fixed;
+	background-size: cover;
 }
 
 /*
 RUSH INFO SECTION
 */
 
-.top-image {
-	width: 100%;
-	padding: 60px 0px 60px 0px;
+.cloudy-image {
 	background: rgba(0, 0, 0, 0.5);
 }
 
@@ -27,30 +26,26 @@ RUSH INFO SECTION
 	height: 100px;
 }
 
-#rushinfo {
+.rushinfo {
 	width: 100%;
 	height: auto;
 	background: white;
 }
 
-#rushinfo img {
-	height: 400px;
-}
-
-#rushinfo h1 {
+.rushinfo h1 {
 	font-size: 24px;
 	color: #252525;
 	float: left;
 }
 
-#rushinfo p {
+.rushinfo p {
 	font-size: 20px;
 	font-family: 'Raleway';
 	color: #252525;
 	line-height: 35px;
 }
 
-#rushinfo a {
+.rushinfo a {
 	text-decoration: none;
 	color: white;
 	background-color: dimgrey;
@@ -60,53 +55,32 @@ RUSH INFO SECTION
 	transition: background-color 0.5s ease;
 }
 
-#rushinfo a:hover {
+.rushinfo a:hover {
 	background-color: black;
-}
-
-#rushinterest {
-	text-align: right;
-}
-
-#rushinterest img {
-	float: left;
-	margin-top: 72px;
-}
-
-#rushinterest h1 {
-	margin-top: 70px;
-	float: right;
-}
-
-#rushinterest p {
-	padding-top: 40px;
-	margin-bottom: 50px;
-	margin-left: 50px;
-	float: left;
-	width: 500px;
-}
-
-#rushbeta {
-	margin-bottom: -50px;
-}
-
-#rushbeta img {
-	float: right;
-}
-
-#rushbeta h1 {
-	float: left;
-}
-
-#rushbeta p {
-	padding-top: 50px;
-	margin-right: 50px;
-	float: right;
-	width: 575px;
 }
 
 .rushcontainer {
 	width: 90%;
 	margin: 0 auto;
-	height: 550px;
+	height: 560px;
+}
+
+.rushcontainer img {
+	float: left;
+	margin-top: 72px;
+	height: 400px;
+	width: 700px;
+}
+
+.rushcontainer h1 {
+	margin-top: 60px;
+	float: right;
+}
+
+.rushcontainer p {
+	padding-top: 35px;
+	margin-bottom: 50px;
+	margin-left: 50px;
+	float: left;
+	width: 475px;
 }

@@ -1,0 +1,22 @@
+/*
+OVERALL
+*/
+
+body {
+	background: url("../images/uofibackground.jpg") repeat center fixed;
+	background-size: cover;
+}
+
+/*
+TOP SECTION
+*/
+
+#topimage {
+	width: 100%;
+	height: 200px;
+}
+
+#topimage img {
+	width: 100%;
+	height: 100%;
+}

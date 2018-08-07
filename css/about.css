@@ -33,8 +33,7 @@ ABOUT US SECTION
 #aboutusnav {
 	padding-top: 60px;
 	padding-bottom: 20px;
-	margin: 0 209px;
-	border-bottom: 1px solid grey;
+	margin: 0 184px;
 	margin-bottom: 20px;
 }
 
@@ -45,7 +44,6 @@ ABOUT US SECTION
 }
 
 #aboutusnav h3 {
-	border-top: 1px solid grey;
 	padding-top: 20px;
 	margin-top: 60px;
 }
@@ -58,8 +56,7 @@ ABOUT US SECTION
 	padding-bottom: 18px;
 	padding-right: 28px;
 	padding-left: 28px;
-	border-right: 1px solid grey;
-	border-left: 1px solid grey;
+	border: 1px solid grey;
 
 	transition: background-color 0.5s ease;
 }
@@ -92,7 +89,7 @@ ABOUT US SECTION
 
 .aboutblock p {
 	font-size: 18px;
-	line-height: 37px;
+	line-height: 35px;
 }
 
 #founderstext {

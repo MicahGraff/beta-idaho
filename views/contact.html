@@ -52,21 +52,36 @@
 		<section id="backgroundcover">
 			<div id="contactinfo">
 				<h1>Contact Us</h1>
-				<p></p>
+				<p>Have questions, or want to get a hold of us? Feel free to fill out the contact form below, and we will make sure your question gets sent to the right person for the job, so that you get a response back as quick as possible!</p>
 			</div>
 			<div id="contactform">
 				<form>
-					<label for=""></label>
-					<input type="text" name="name">
-
-					<label for=""></label>
-					<input type="text" name="email">
-
-					<label for=""></label>
-					<input type="dropdown" name="reason">
-
-					<input type="text" name="subject" placeholder="Subject">
-					<input type="textbox" name="content">
+					<div class="contactinline">
+						<label for="nameinput">Name:</label>
+						</br>
+						<input type="text" name="name" id="nameinput">
+					</div>
+					<div class="contactinline">
+						<label for="emailinput">Email:</label>
+						</br>
+						<input type="email" name="email" id="emailinput">
+					</div>
+					<div class="contactinline">
+						<label for="reasoninput">Reason:</label>
+						</br>
+						<select name="reason" id="reasoninput">
+							<option value="" disabled selected>Select your reason</option>
+							<option value="generalquestion">General Question</option>
+							<option value="option2">Rush Info</option>
+							<option value="option3">Cost/Pricing Inquiry</option>
+						</select>
+					</div>
+					<div id="contentinput">
+						<input type="text" name="subject" placeholder="Subject">
+						</br>
+						<textarea name="content" placeholder="What can we help you with?"></textarea>
+					</div>
+					<input type="submit" id="submitbutton">
 				</form>
 			</div>			
 		</section>

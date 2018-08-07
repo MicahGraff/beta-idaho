@@ -331,7 +331,7 @@ NAV MENU
   top: 0px;
   height: 100%;
   background-color: black;
-  opacity: 0.88;
+  opacity: 0.9;
   right: 0px;
   z-index: 9;
 }
@@ -361,11 +361,11 @@ NAV MENU
 }
 
 #menuNav button.first-button {
-  margin-top: 115px;
+  margin-top: 80px;
 }
 
 #menuNav button {
-  margin-top: 65px;
+  margin-top: 50px;
   border: none;
   height: 50px;
   width: 150px;
@@ -484,6 +484,11 @@ CLASSES
   padding: 83px 0px 83px 0px;
 }
 
+.seeThroughHeader {
+  width: 100%;
+  padding: 60px 0px 60px 0px;
+}
+
 .fixedElement {
 
 }
@@ -506,5 +511,9 @@ CLASSES
 
 .active {
   color: dimgrey;
+}
+
+.bold-text {
+  font-weight: 600;
 }
 

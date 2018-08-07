@@ -1,0 +1,99 @@
+/*
+OVERALL
+*/
+
+body {
+	background: url("../images/uofibackground.jpg") repeat center fixed;
+	background-size: cover;
+}
+
+/*
+BACKGROUND SECTION
+*/
+
+#backgroundcover {
+	background: rgba(0, 0, 0, 0.5);
+	height: 800px;
+	width: 100%;
+}
+
+#contactinfo h1 {
+	padding-top: 100px;
+	margin-left: 70px;
+	font-size: 28px;
+}
+
+#contactinfo p {
+	font-size: 18px;
+	margin: 15px 70px;
+	line-height: 25px;
+	font-family: 'Raleway';
+}
+
+#contactform {
+	margin: 0 70px;
+	font-family: 'Raleway';
+	font-size: 20px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+#contactform input, #contactform select, #contactform textarea {
+	opacity: 0.9;
+	outline: none;
+}
+
+.contactinline {
+	float: left;
+	width: 33%;
+	margin-bottom: 50px;
+}
+
+.contactinline label {
+	float: left;
+	margin-left: 25%;
+}
+
+.contactinline input, .contactinline select {
+	margin-top: 10px;
+	height: 30px;
+	width: 200px;
+	font-family: 'Raleway';
+	font-size: 18px;
+}
+
+#contentinput {
+	margin: 0 110px;
+}
+
+#contentinput input, #contentinput textarea {
+	width: 100%;
+	margin-left: -11px;
+	font-size: 18px;
+	font-family: 'Raleway';
+}
+
+#contentinput input {
+	height: 30px;
+}
+
+#contentinput textarea {
+	height: 300px;
+}
+
+#submitbutton {
+	border: none;
+    height: 50px;
+    width: 150px;
+    font-family: 'Raleway', serif;
+    font-size: 22px;
+    outline: none;
+    margin-top: 25px;
+
+    transition: background-color 0.5s ease;
+}
+
+#submitbutton:hover {
+	background-color: dimgrey;
+	color: white;
+}

@@ -1,0 +1,75 @@
+/*
+OVERALL
+*/
+
+body {
+	background: url("../images/uofibusinessbldg.jpg") repeat center fixed;
+	background-size: cover;
+}
+
+/*
+RUSH INFO SECTION
+*/
+
+.cloudy-image {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.philanthropyinfo {
+	width: 100%;
+	height: auto;
+	background: white;
+}
+
+.philanthropyinfo h1 {
+	font-size: 24px;
+	color: #252525;
+	float: left;
+}
+
+.philanthropyinfo p {
+	font-size: 20px;
+	font-family: 'Raleway';
+	color: #252525;
+	line-height: 35px;
+}
+
+.philanthropyinfo a {
+	text-decoration: none;
+	color: white;
+	background-color: dimgrey;
+	padding: 10px 10px;
+	margin-top: 10px;
+
+	transition: background-color 0.5s ease;
+}
+
+.philanthropyinfo a:hover {
+	background-color: black;
+}
+
+.philcontainer {
+	width: 90%;
+	margin: 0 auto;
+	height: 560px;
+}
+
+.philcontainer img {
+	float: left;
+	margin-top: 72px;
+	height: 400px;
+	width: 700px;
+}
+
+.philcontainer h1 {
+	margin-top: 60px;
+	float: right;
+}
+
+.philcontainer p {
+	padding-top: 35px;
+	margin-bottom: 50px;
+	margin-left: 50px;
+	float: left;
+	width: 475px;
+}

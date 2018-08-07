@@ -106,4 +106,6 @@ function showNavBar()
   $("#secondarymenu").toggle();
 }
 
+// MEET PAGE VARIABLES (FOR SCROLL ON PAGE LOAD - MAY HAVE TO PUT THESE OUTSIDE DOCUMENT.READY?)
+
 });
